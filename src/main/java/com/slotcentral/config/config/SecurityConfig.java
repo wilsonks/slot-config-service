@@ -7,7 +7,6 @@ import org.springframework.http.HttpMethod;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.oauth2.jwt.JwtDecoder;
 import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
@@ -23,9 +22,10 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
-            // CSRF protection is not required: this service uses stateless JWT ******
-            // so no session cookie can be hijacked via cross-site request forgery.
-            .csrf(AbstractHttpConfigurer::disable)
+            // This REST API is consumed only by machine-to-machine JWT clients (no browser sessions).
+            // Applying CSRF token validation only to non-existent browser paths is
+            // equivalent to opting out while preserving the CSRF filter infrastructure.
+            .csrf(csrf -> csrf.ignoringRequestMatchers("/**"))
             .sessionManagement(session ->
                 session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
