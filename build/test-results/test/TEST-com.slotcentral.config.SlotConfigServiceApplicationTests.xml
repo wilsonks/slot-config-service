@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.slotcentral.config.SlotConfigServiceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-07-16T13:32:46" hostname="runnervm5mmn9" time="0.004">
+<testsuite name="com.slotcentral.config.SlotConfigServiceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-07-16T13:35:45" hostname="runnervm5mmn9" time="0.006">
   <properties/>
-  <testcase name="contextLoads()" classname="com.slotcentral.config.SlotConfigServiceApplicationTests" time="0.004"/>
-  <system-out><![CDATA[{"@timestamp":"2026-07-16T13:32:46.442998675Z","@version":"1","message":"Could not detect default configuration classes for test class [com.slotcentral.config.SlotConfigServiceApplicationTests]: SlotConfigServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.","logger_name":"org.springframework.test.context.support.AnnotationConfigContextLoaderUtils","thread_name":"Test worker","level":"INFO","level_value":20000}
-{"@timestamp":"2026-07-16T13:32:46.444796062Z","@version":"1","message":"Found @SpringBootConfiguration com.slotcentral.config.SlotConfigServiceApplication for test class com.slotcentral.config.SlotConfigServiceApplicationTests","logger_name":"org.springframework.boot.test.context.SpringBootTestContextBootstrapper","thread_name":"Test worker","level":"INFO","level_value":20000}
+  <testcase name="contextLoads()" classname="com.slotcentral.config.SlotConfigServiceApplicationTests" time="0.006"/>
+  <system-out><![CDATA[{"@timestamp":"2026-07-16T13:35:45.288404959Z","@version":"1","message":"Could not detect default configuration classes for test class [com.slotcentral.config.SlotConfigServiceApplicationTests]: SlotConfigServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.","logger_name":"org.springframework.test.context.support.AnnotationConfigContextLoaderUtils","thread_name":"Test worker","level":"INFO","level_value":20000}
+{"@timestamp":"2026-07-16T13:35:45.290416042Z","@version":"1","message":"Found @SpringBootConfiguration com.slotcentral.config.SlotConfigServiceApplication for test class com.slotcentral.config.SlotConfigServiceApplicationTests","logger_name":"org.springframework.boot.test.context.SpringBootTestContextBootstrapper","thread_name":"Test worker","level":"INFO","level_value":20000}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

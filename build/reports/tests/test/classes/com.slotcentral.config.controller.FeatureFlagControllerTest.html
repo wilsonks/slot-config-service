@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.102s</div>
+<div class="counter">0.116s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">getFlag_withoutAuthentication_returns401()</td>
-<td class="success">0.023s</td>
+<td class="success">0.025s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">upsertFlag_withAdminRole_returns200()</td>
-<td class="success">0.068s</td>
+<td class="success">0.079s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">upsertFlag_withoutAdminRole_returns403()</td>
-<td class="success">0.011s</td>
+<td class="success">0.012s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -97,8 +97,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>{&quot;@timestamp&quot;:&quot;2026-07-16T13:32:46.458790649Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Could not detect default configuration classes for test class [com.slotcentral.config.controller.FeatureFlagControllerTest]: FeatureFlagControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.&quot;,&quot;logger_name&quot;:&quot;org.springframework.test.context.support.AnnotationConfigContextLoaderUtils&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
-{&quot;@timestamp&quot;:&quot;2026-07-16T13:32:46.475857304Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Found @SpringBootConfiguration com.slotcentral.config.SlotConfigServiceApplication for test class com.slotcentral.config.controller.FeatureFlagControllerTest&quot;,&quot;logger_name&quot;:&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+<pre>{&quot;@timestamp&quot;:&quot;2026-07-16T13:35:45.304943803Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Could not detect default configuration classes for test class [com.slotcentral.config.controller.FeatureFlagControllerTest]: FeatureFlagControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.&quot;,&quot;logger_name&quot;:&quot;org.springframework.test.context.support.AnnotationConfigContextLoaderUtils&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:35:45.32542214Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Found @SpringBootConfiguration com.slotcentral.config.SlotConfigServiceApplication for test class com.slotcentral.config.controller.FeatureFlagControllerTest&quot;,&quot;logger_name&quot;:&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -109,12 +109,12 @@
 
  :: Spring Boot ::                (v3.3.5)
 
-{&quot;@timestamp&quot;:&quot;2026-07-16T13:32:46.522351319Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Starting FeatureFlagControllerTest using Java 21.0.11 with PID 7332 (started by runner in /home/runner/work/slot-config-service/slot-config-service)&quot;,&quot;logger_name&quot;:&quot;com.slotcentral.config.controller.FeatureFlagControllerTest&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
-{&quot;@timestamp&quot;:&quot;2026-07-16T13:32:46.522757447Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;The following 1 profile is active: \&quot;native\&quot;&quot;,&quot;logger_name&quot;:&quot;com.slotcentral.config.controller.FeatureFlagControllerTest&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
-{&quot;@timestamp&quot;:&quot;2026-07-16T13:32:46.962780801Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Initializing Spring TestDispatcherServlet ''&quot;,&quot;logger_name&quot;:&quot;org.springframework.boot.test.mock.web.SpringBootMockServletContext&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
-{&quot;@timestamp&quot;:&quot;2026-07-16T13:32:46.963076133Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Initializing Servlet ''&quot;,&quot;logger_name&quot;:&quot;org.springframework.test.web.servlet.TestDispatcherServlet&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
-{&quot;@timestamp&quot;:&quot;2026-07-16T13:32:46.96440276Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Completed initialization in 1 ms&quot;,&quot;logger_name&quot;:&quot;org.springframework.test.web.servlet.TestDispatcherServlet&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
-{&quot;@timestamp&quot;:&quot;2026-07-16T13:32:46.976230127Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Started FeatureFlagControllerTest in 0.495 seconds (process running for 8.15)&quot;,&quot;logger_name&quot;:&quot;com.slotcentral.config.controller.FeatureFlagControllerTest&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:35:45.386983417Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Starting FeatureFlagControllerTest using Java 17.0.19 with PID 8486 (started by runner in /home/runner/work/slot-config-service/slot-config-service)&quot;,&quot;logger_name&quot;:&quot;com.slotcentral.config.controller.FeatureFlagControllerTest&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:35:45.387455874Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;The following 1 profile is active: \&quot;native\&quot;&quot;,&quot;logger_name&quot;:&quot;com.slotcentral.config.controller.FeatureFlagControllerTest&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:35:45.829929308Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Initializing Spring TestDispatcherServlet ''&quot;,&quot;logger_name&quot;:&quot;org.springframework.boot.test.mock.web.SpringBootMockServletContext&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:35:45.830208495Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Initializing Servlet ''&quot;,&quot;logger_name&quot;:&quot;org.springframework.test.web.servlet.TestDispatcherServlet&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:35:45.831001224Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Completed initialization in 0 ms&quot;,&quot;logger_name&quot;:&quot;org.springframework.test.web.servlet.TestDispatcherServlet&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:35:45.845154642Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Started FeatureFlagControllerTest in 0.513 seconds (process running for 9.565)&quot;,&quot;logger_name&quot;:&quot;com.slotcentral.config.controller.FeatureFlagControllerTest&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
 </pre>
 </span>
 </div>
@@ -126,7 +126,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.8</a> at Jul 16, 2026, 1:32:47 PM</p>
+<a href="http://www.gradle.org">Gradle 8.8</a> at Jul 16, 2026, 1:35:46 PM</p>
 </div>
 </div>
 </body>
