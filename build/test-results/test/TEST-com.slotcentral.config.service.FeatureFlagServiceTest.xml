@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.slotcentral.config.service.FeatureFlagServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-07-16T13:35:45" hostname="runnervm5mmn9" time="0.209">
+  <properties/>
+  <testcase name="getFlag_whenNotFound_throwsNotFound()" classname="com.slotcentral.config.service.FeatureFlagServiceTest" time="0.19"/>
+  <testcase name="upsertFlag_newFlag_createsAndRecordsAuditWithNullOldValue()" classname="com.slotcentral.config.service.FeatureFlagServiceTest" time="0.011"/>
+  <testcase name="upsertFlag_existingFlag_updatesAndRecordsCorrectOldValue()" classname="com.slotcentral.config.service.FeatureFlagServiceTest" time="0.002"/>
+  <testcase name="getFlag_whenFound_returnsDto()" classname="com.slotcentral.config.service.FeatureFlagServiceTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

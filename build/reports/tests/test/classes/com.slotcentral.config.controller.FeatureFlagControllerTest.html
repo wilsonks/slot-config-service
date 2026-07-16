@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - FeatureFlagControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>FeatureFlagControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.slotcentral.config.controller.html">com.slotcentral.config.controller</a> &gt; FeatureFlagControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.116s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getFlag_withoutAuthentication_returns401()</td>
+<td class="success">0.025s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">upsertFlag_withAdminRole_returns200()</td>
+<td class="success">0.079s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">upsertFlag_withoutAdminRole_returns403()</td>
+<td class="success">0.012s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>{&quot;@timestamp&quot;:&quot;2026-07-16T13:35:45.304943803Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Could not detect default configuration classes for test class [com.slotcentral.config.controller.FeatureFlagControllerTest]: FeatureFlagControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.&quot;,&quot;logger_name&quot;:&quot;org.springframework.test.context.support.AnnotationConfigContextLoaderUtils&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:35:45.32542214Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Found @SpringBootConfiguration com.slotcentral.config.SlotConfigServiceApplication for test class com.slotcentral.config.controller.FeatureFlagControllerTest&quot;,&quot;logger_name&quot;:&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:35:45.386983417Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Starting FeatureFlagControllerTest using Java 17.0.19 with PID 8486 (started by runner in /home/runner/work/slot-config-service/slot-config-service)&quot;,&quot;logger_name&quot;:&quot;com.slotcentral.config.controller.FeatureFlagControllerTest&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:35:45.387455874Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;The following 1 profile is active: \&quot;native\&quot;&quot;,&quot;logger_name&quot;:&quot;com.slotcentral.config.controller.FeatureFlagControllerTest&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:35:45.829929308Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Initializing Spring TestDispatcherServlet ''&quot;,&quot;logger_name&quot;:&quot;org.springframework.boot.test.mock.web.SpringBootMockServletContext&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:35:45.830208495Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Initializing Servlet ''&quot;,&quot;logger_name&quot;:&quot;org.springframework.test.web.servlet.TestDispatcherServlet&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:35:45.831001224Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Completed initialization in 0 ms&quot;,&quot;logger_name&quot;:&quot;org.springframework.test.web.servlet.TestDispatcherServlet&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:35:45.845154642Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Started FeatureFlagControllerTest in 0.513 seconds (process running for 9.565)&quot;,&quot;logger_name&quot;:&quot;com.slotcentral.config.controller.FeatureFlagControllerTest&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at Jul 16, 2026, 1:35:46 PM</p>
+</div>
+</div>
+</body>
+</html>

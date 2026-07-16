@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: slotconfig
+      POSTGRES_USER: slotconfig
+      POSTGRES_PASSWORD: slotconfig
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U slotconfig"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  slot-config-service:
+    build: .
+    ports:
+      - "8888:8888"
+    environment:
+      DB_URL: jdbc:postgresql://postgres:5432/slotconfig
+      DB_USERNAME: slotconfig
+      DB_PASSWORD: slotconfig
+      AUTH_SERVICE_JWKS_URL: http://slot-auth-service:8081/.well-known/jwks.json
+      ENVIRONMENT: docker
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  postgres_data:

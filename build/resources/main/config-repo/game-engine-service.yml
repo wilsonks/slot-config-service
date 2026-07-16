@@ -1,0 +1,182 @@
+game:
+  engine:
+    gaffing:
+      enabled: false
+      rtpAdjustment: 0.0
+
+    betsValues:
+      - 0.01
+      - 0.05
+      - 0.10
+      - 0.25
+      - 0.50
+      - 1.00
+      - 2.00
+      - 5.00
+      - 10.00
+      - 25.00
+
+    denomValues:
+      - 0.01
+      - 0.02
+      - 0.05
+      - 0.10
+      - 0.25
+      - 0.50
+      - 1.00
+      - 2.00
+      - 5.00
+
+    paytable:
+      credits:
+        threeOfAKind:
+          wild: 1000
+          seven: 500
+          bar3: 200
+          bar2: 100
+          bar1: 50
+          cherry: 20
+          anyBar: 10
+        fourOfAKind:
+          wild: 2000
+          seven: 1000
+          bar3: 400
+          bar2: 200
+          bar1: 100
+          cherry: 40
+        fiveOfAKind:
+          wild: 5000
+          seven: 2500
+          bar3: 1000
+          bar2: 500
+          bar1: 250
+          cherry: 100
+
+    reelStrips:
+      reel1:
+        - wild
+        - blank
+        - bar1
+        - bar2
+        - blank
+        - cherry
+        - bar3
+        - blank
+        - seven
+        - blank
+        - bar1
+        - blank
+        - bar2
+        - cherry
+        - blank
+        - bar1
+        - blank
+        - bar3
+        - blank
+        - bar1
+      reel2:
+        - bar1
+        - blank
+        - wild
+        - blank
+        - bar2
+        - blank
+        - bar1
+        - cherry
+        - blank
+        - bar3
+        - blank
+        - seven
+        - blank
+        - bar1
+        - blank
+        - bar2
+        - blank
+        - bar1
+        - cherry
+        - blank
+      reel3:
+        - bar2
+        - blank
+        - bar1
+        - blank
+        - cherry
+        - blank
+        - bar3
+        - blank
+        - bar1
+        - wild
+        - blank
+        - bar2
+        - blank
+        - bar1
+        - seven
+        - blank
+        - bar1
+        - blank
+        - cherry
+        - blank
+      reel4:
+        - bar3
+        - blank
+        - bar1
+        - blank
+        - bar2
+        - wild
+        - blank
+        - bar1
+        - blank
+        - cherry
+        - blank
+        - bar1
+        - blank
+        - seven
+        - blank
+        - bar2
+        - blank
+        - bar1
+        - blank
+        - bar3
+      reel5:
+        - seven
+        - blank
+        - bar1
+        - blank
+        - bar2
+        - blank
+        - bar3
+        - wild
+        - blank
+        - bar1
+        - cherry
+        - blank
+        - bar2
+        - blank
+        - bar1
+        - blank
+        - bar3
+        - blank
+        - bar1
+        - blank
+
+    bonus:
+      trigger:
+        symbolName: scatter
+        minCount: 3
+        odds: 0.02
+      freeSpins:
+        count: 10
+        multiplier: 2
+      pickerBonus:
+        enabled: true
+        prizes:
+          - multiplier: 5
+            weight: 30
+          - multiplier: 10
+            weight: 20
+          - multiplier: 25
+            weight: 10
+          - multiplier: 50
+            weight: 5
+          - multiplier: 100
+            weight: 1
