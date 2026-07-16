@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: slot-config-service
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config-repo/
+        git:
+          uri: ${CONFIG_GIT_URI:file:./config-repo}
+          default-label: main
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/slotconfig}
+    username: ${DB_USERNAME:slotconfig}
+    password: ${DB_PASSWORD:slotconfig}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+server:
+  port: ${PORT:8888}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,refresh,prometheus,metrics
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
+logging:
+  config: classpath:logback-spring.xml
+
+security:
+  jwt:
+    jwks-uri: ${AUTH_SERVICE_JWKS_URL:http://localhost:8081/.well-known/jwks.json}

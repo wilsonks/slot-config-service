@@ -1,0 +1,14 @@
+# Shared defaults across all services
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+
+logging:
+  level:
+    root: INFO
+
+platform:
+  version: 1.0.0
+  environment: ${ENVIRONMENT:development}

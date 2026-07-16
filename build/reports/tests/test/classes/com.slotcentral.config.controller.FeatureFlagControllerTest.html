@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - FeatureFlagControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>FeatureFlagControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.slotcentral.config.controller.html">com.slotcentral.config.controller</a> &gt; FeatureFlagControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.254s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getFlag_withoutAuthentication_returns401()</td>
+<td class="success">0.063s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">upsertFlag_withAdminRole_returns200()</td>
+<td class="success">0.175s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">upsertFlag_withoutAdminRole_returns403()</td>
+<td class="success">0.016s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>13:25:33.159 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.slotcentral.config.controller.FeatureFlagControllerTest]: FeatureFlagControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:25:33.289 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.slotcentral.config.SlotConfigServiceApplication for test class com.slotcentral.config.controller.FeatureFlagControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:25:33.940382468Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;HV000001: Hibernate Validator 8.0.1.Final&quot;,&quot;logger_name&quot;:&quot;org.hibernate.validator.internal.util.Version&quot;,&quot;thread_name&quot;:&quot;background-preinit&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:25:33.981334557Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Starting FeatureFlagControllerTest using Java 21.0.11 with PID 4823 (started by runner in /home/runner/work/slot-config-service/slot-config-service)&quot;,&quot;logger_name&quot;:&quot;com.slotcentral.config.controller.FeatureFlagControllerTest&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:25:33.982583165Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;The following 1 profile is active: \&quot;native\&quot;&quot;,&quot;logger_name&quot;:&quot;com.slotcentral.config.controller.FeatureFlagControllerTest&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:25:36.096934264Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Initializing Spring TestDispatcherServlet ''&quot;,&quot;logger_name&quot;:&quot;org.springframework.boot.test.mock.web.SpringBootMockServletContext&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:25:36.097839414Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Initializing Servlet ''&quot;,&quot;logger_name&quot;:&quot;org.springframework.test.web.servlet.TestDispatcherServlet&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:25:36.099481912Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Completed initialization in 1 ms&quot;,&quot;logger_name&quot;:&quot;org.springframework.test.web.servlet.TestDispatcherServlet&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+{&quot;@timestamp&quot;:&quot;2026-07-16T13:25:36.130111997Z&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;message&quot;:&quot;Started FeatureFlagControllerTest in 2.765 seconds (process running for 3.693)&quot;,&quot;logger_name&quot;:&quot;com.slotcentral.config.controller.FeatureFlagControllerTest&quot;,&quot;thread_name&quot;:&quot;Test worker&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;level_value&quot;:20000}
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>WARNING: A Java agent has been loaded dynamically (/home/runner/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.19/154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1/byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at Jul 16, 2026, 1:25:41 PM</p>
+</div>
+</div>
+</body>
+</html>

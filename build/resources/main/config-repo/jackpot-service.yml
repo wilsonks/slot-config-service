@@ -1,0 +1,25 @@
+jackpot:
+  tiers:
+    mini:
+      baseAmount: 10.00
+      incrementRate: 0.001
+      triggerOdds: 0.05
+    minor:
+      baseAmount: 100.00
+      incrementRate: 0.002
+      triggerOdds: 0.01
+    major:
+      baseAmount: 1000.00
+      incrementRate: 0.003
+      triggerOdds: 0.001
+    grand:
+      baseAmount: 10000.00
+      incrementRate: 0.005
+      triggerOdds: 0.0001
+
+  contribution:
+    rate: 0.005
+    maxPoolMultiplier: 10.0
+
+  resetOnWin: true
+  broadcastIntervalMs: 5000
