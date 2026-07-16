@@ -267,7 +267,7 @@ Test coverage:
 docker build -t slot-config-service:latest .
 ```
 
-Multi-stage build: Maven build in `eclipse-temurin:21-jdk-alpine`, runtime in `eclipse-temurin:21-jre-alpine`. Runs as non-root `appuser`.
+Multi-stage build: Maven build in `maven:3.9-eclipse-temurin-17-alpine`, runtime in `eclipse-temurin:21-jre-alpine`. Runs as non-root `appuser`.
 
 ---
 
