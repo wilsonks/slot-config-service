@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.slotcentral.config.controller.FeatureFlagControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-07-16T13:25:36" hostname="runnervm5mmn9" time="0.258">
+<testsuite name="com.slotcentral.config.controller.FeatureFlagControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-07-16T13:29:26" hostname="runnervm5mmn9" time="0.121">
   <properties/>
-  <testcase name="getFlag_withoutAuthentication_returns401()" classname="com.slotcentral.config.controller.FeatureFlagControllerTest" time="0.063"/>
-  <testcase name="upsertFlag_withoutAdminRole_returns403()" classname="com.slotcentral.config.controller.FeatureFlagControllerTest" time="0.016"/>
-  <testcase name="upsertFlag_withAdminRole_returns200()" classname="com.slotcentral.config.controller.FeatureFlagControllerTest" time="0.175"/>
-  <system-out><![CDATA[13:25:33.159 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.slotcentral.config.controller.FeatureFlagControllerTest]: FeatureFlagControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-13:25:33.289 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.slotcentral.config.SlotConfigServiceApplication for test class com.slotcentral.config.controller.FeatureFlagControllerTest
+  <testcase name="getFlag_withoutAuthentication_returns401()" classname="com.slotcentral.config.controller.FeatureFlagControllerTest" time="0.025"/>
+  <testcase name="upsertFlag_withoutAdminRole_returns403()" classname="com.slotcentral.config.controller.FeatureFlagControllerTest" time="0.014"/>
+  <testcase name="upsertFlag_withAdminRole_returns200()" classname="com.slotcentral.config.controller.FeatureFlagControllerTest" time="0.079"/>
+  <system-out><![CDATA[{"@timestamp":"2026-07-16T13:29:26.408866641Z","@version":"1","message":"Could not detect default configuration classes for test class [com.slotcentral.config.controller.FeatureFlagControllerTest]: FeatureFlagControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.","logger_name":"org.springframework.test.context.support.AnnotationConfigContextLoaderUtils","thread_name":"Test worker","level":"INFO","level_value":20000}
+{"@timestamp":"2026-07-16T13:29:26.427875019Z","@version":"1","message":"Found @SpringBootConfiguration com.slotcentral.config.SlotConfigServiceApplication for test class com.slotcentral.config.controller.FeatureFlagControllerTest","logger_name":"org.springframework.boot.test.context.SpringBootTestContextBootstrapper","thread_name":"Test worker","level":"INFO","level_value":20000}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -16,17 +16,12 @@
 
  :: Spring Boot ::                (v3.3.5)
 
-{"@timestamp":"2026-07-16T13:25:33.940382468Z","@version":"1","message":"HV000001: Hibernate Validator 8.0.1.Final","logger_name":"org.hibernate.validator.internal.util.Version","thread_name":"background-preinit","level":"INFO","level_value":20000}
-{"@timestamp":"2026-07-16T13:25:33.981334557Z","@version":"1","message":"Starting FeatureFlagControllerTest using Java 21.0.11 with PID 4823 (started by runner in /home/runner/work/slot-config-service/slot-config-service)","logger_name":"com.slotcentral.config.controller.FeatureFlagControllerTest","thread_name":"Test worker","level":"INFO","level_value":20000}
-{"@timestamp":"2026-07-16T13:25:33.982583165Z","@version":"1","message":"The following 1 profile is active: \"native\"","logger_name":"com.slotcentral.config.controller.FeatureFlagControllerTest","thread_name":"Test worker","level":"INFO","level_value":20000}
-{"@timestamp":"2026-07-16T13:25:36.096934264Z","@version":"1","message":"Initializing Spring TestDispatcherServlet ''","logger_name":"org.springframework.boot.test.mock.web.SpringBootMockServletContext","thread_name":"Test worker","level":"INFO","level_value":20000}
-{"@timestamp":"2026-07-16T13:25:36.097839414Z","@version":"1","message":"Initializing Servlet ''","logger_name":"org.springframework.test.web.servlet.TestDispatcherServlet","thread_name":"Test worker","level":"INFO","level_value":20000}
-{"@timestamp":"2026-07-16T13:25:36.099481912Z","@version":"1","message":"Completed initialization in 1 ms","logger_name":"org.springframework.test.web.servlet.TestDispatcherServlet","thread_name":"Test worker","level":"INFO","level_value":20000}
-{"@timestamp":"2026-07-16T13:25:36.130111997Z","@version":"1","message":"Started FeatureFlagControllerTest in 2.765 seconds (process running for 3.693)","logger_name":"com.slotcentral.config.controller.FeatureFlagControllerTest","thread_name":"Test worker","level":"INFO","level_value":20000}
+{"@timestamp":"2026-07-16T13:29:26.482192714Z","@version":"1","message":"Starting FeatureFlagControllerTest using Java 21.0.11 with PID 6130 (started by runner in /home/runner/work/slot-config-service/slot-config-service)","logger_name":"com.slotcentral.config.controller.FeatureFlagControllerTest","thread_name":"Test worker","level":"INFO","level_value":20000}
+{"@timestamp":"2026-07-16T13:29:26.482696808Z","@version":"1","message":"The following 1 profile is active: \"native\"","logger_name":"com.slotcentral.config.controller.FeatureFlagControllerTest","thread_name":"Test worker","level":"INFO","level_value":20000}
+{"@timestamp":"2026-07-16T13:29:26.952919986Z","@version":"1","message":"Initializing Spring TestDispatcherServlet ''","logger_name":"org.springframework.boot.test.mock.web.SpringBootMockServletContext","thread_name":"Test worker","level":"INFO","level_value":20000}
+{"@timestamp":"2026-07-16T13:29:26.953265086Z","@version":"1","message":"Initializing Servlet ''","logger_name":"org.springframework.test.web.servlet.TestDispatcherServlet","thread_name":"Test worker","level":"INFO","level_value":20000}
+{"@timestamp":"2026-07-16T13:29:26.954186127Z","@version":"1","message":"Completed initialization in 1 ms","logger_name":"org.springframework.test.web.servlet.TestDispatcherServlet","thread_name":"Test worker","level":"INFO","level_value":20000}
+{"@timestamp":"2026-07-16T13:29:26.969216184Z","@version":"1","message":"Started FeatureFlagControllerTest in 0.535 seconds (process running for 8.777)","logger_name":"com.slotcentral.config.controller.FeatureFlagControllerTest","thread_name":"Test worker","level":"INFO","level_value":20000}
 ]]></system-out>
-  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/home/runner/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.19/154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1/byte-buddy-agent-1.14.19.jar)
-WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
-WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
-WARNING: Dynamic loading of agents will be disallowed by default in a future release
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>
