@@ -219,7 +219,7 @@ This starts Postgres and the config service on port 8888.
 ### Without Docker (local Postgres required)
 ```bash
 # Start Postgres first, then:
-./gradlew bootRun
+mvn spring-boot:run
 ```
 
 ### Test the Config Server
@@ -249,7 +249,7 @@ curl http://localhost:8888/api/v1/flags/gaffing.enabled/audit \
 
 ## Running Tests
 ```bash
-./gradlew test
+mvn test
 ```
 
 Tests use H2 in-memory database (Flyway disabled in test profile, JPA creates schema via `create-drop`).
@@ -267,7 +267,7 @@ Test coverage:
 docker build -t slot-config-service:latest .
 ```
 
-Multi-stage build: Gradle build in `eclipse-temurin:21-jdk-alpine`, runtime in `eclipse-temurin:21-jre-alpine`. Runs as non-root `appuser`.
+Multi-stage build: Maven build in `eclipse-temurin:21-jdk-alpine`, runtime in `eclipse-temurin:21-jre-alpine`. Runs as non-root `appuser`.
 
 ---
 
